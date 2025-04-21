@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Calculators Hub</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><a href="index.html">Financial Calculators Hub</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <!-- Link to a central calculator page or directly -->
+                    <li><a href="calculators/compound-interest.html">Compound Interest</a></li>
+                    <li><a href="calculators/emi-calculator.html">EMI Calculators</a></li>
+                    <!-- Add links to other calculators as you build them -->
+                    <li><a href="articles.html">Articles</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="container">
+            <h2>Empower Your Financial Decisions</h2>
+            <p>Access a suite of easy-to-use calculators for loans, investments, savings, and more. Make informed choices about your money.</p>
+            <a href="calculators/compound-interest.html" class="button">Get Started</a>
+        </section>
+
+        <section id="featured-calculators" class="container">
+            <h3>Popular Calculators</h3>
+            <div class="calculator-links">
+                <a href="calculators/compound-interest.html">Compound Interest Calculator</a>
+                <a href="calculators/emi-calculator.html">EMI Calculator (Loan Payments)</a>
+                <a href="#">SIP Calculator (Coming Soon)</a>
+                <a href="#">Mortgage Calculator (Coming Soon)</a>
+                <!-- Add more links -->
+            </div>
+        </section>
+
+         <section id="learn-more" class="container">
+             <h3>Learn About Finance</h3>
+             <p>Visit our articles section to understand key financial concepts.</p>
+             <a href="articles.html" class="button">Read Articles</a>
+         </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© <span id="current-year"></span> Financial Calculators Hub. All rights reserved.</p>
+            <!-- Add links like Privacy Policy, About Us if needed -->
+        </div>
+    </footer>
+
+    <script>
+        // Simple script for footer year
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+     <!-- Link to main.js if you add shared functions -->
+     <!-- <script src="js/main.js"></script> -->
+</body>
+</html>

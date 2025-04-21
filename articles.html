@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Planning Articles</title>
+    <link rel="stylesheet" href="../css/style.css"> <!-- Adjust path if needed -->
+</head>
+<body>
+     <header>
+        <div class="container">
+            <h1><a href="../index.html">Financial Calculators Hub</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../calculators/compound-interest.html">Compound Interest</a></li>
+                     <li><a href="../calculators/emi-calculator.html">EMI Calculators</a></li>
+                    <li><a href="index.html">Articles</a></li> <!-- Link to self or articles.html -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section>
+            <h2>Financial Planning Articles</h2>
+            <p>Learn more about managing your finances effectively.</p>
+
+            <div class="article-list">
+                 <!-- Add links to your articles here -->
+                 <div class="article-item">
+                     <h3><a href="understanding-compound-interest.html">What is Compound Interest and Why It Matters</a></h3>
+                     <p>Discover the power of making your money work for you over time. Essential for understanding investments and savings growth...</p>
+                     <a href="understanding-compound-interest.html" class="read-more">Read More »</a>
+                 </div>
+
+                 <div class="article-item">
+                     <h3><a href="#">Budgeting Basics (Coming Soon)</a></h3>
+                     <p>Learn how to track your income and expenses to take control of your spending and saving habits...</p>
+                     <!-- <a href="#" class="read-more">Read More »</a> -->
+                 </div>
+
+                  <div class="article-item">
+                     <h3><a href="#">Understanding EMIs (Coming Soon)</a></h3>
+                     <p>A detailed look at how Equated Monthly Installments for loans are calculated and what they mean for your budget...</p>
+                     <!-- <a href="#" class="read-more">Read More »</a> -->
+                 </div>
+
+                 <!-- Add more article previews -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© <span id="current-year"></span> Financial Calculators Hub.</p>
+        </div>
+    </footer>
+
+     <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+    <style>
+        /* Basic styling for article list items */
+        .article-item {
+            background: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 1px solid #eee;
+            border-radius: 5px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+        .article-item h3 a {
+            color: #0056b3;
+            text-decoration: none;
+        }
+         .article-item h3 a:hover {
+             text-decoration: underline;
+         }
+        .article-item p {
+            color: #555;
+            margin-top: 5px;
+             margin-bottom: 10px;
+        }
+        .read-more {
+             font-weight: bold;
+             color: #007bff;
+             text-decoration: none;
+        }
+         .read-more:hover {
+             text-decoration: underline;
+         }
+    </style>
+</body>
+</html>
