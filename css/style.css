@@ -296,3 +296,64 @@ footer {
     border-radius: 3px;
     font-family: monospace;
 }
+/* css/style.css */
+
+/* ... (all your existing styles from the previous response) ... */
+
+
+/* --- Add these styles for the Article List Page --- */
+
+.article-list {
+    margin-top: 20px; /* Add some space above the list */
+}
+
+.article-item {
+    background: #fff; /* White background for each item */
+    padding: 20px;
+    margin-bottom: 20px; /* Space between items */
+    border: 1px solid #eee; /* Subtle border */
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05); /* Subtle shadow */
+    transition: box-shadow 0.3s ease; /* Add hover effect */
+}
+
+.article-item:hover {
+     box-shadow: 0 3px 8px rgba(0,0,0,0.1); /* Slightly enhance shadow on hover */
+}
+
+.article-item h3 {
+    margin-top: 0; /* Reset margin for heading inside item */
+    margin-bottom: 8px;
+}
+
+.article-item h3 a {
+    color: #0056b3; /* Link color consistent with theme */
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+ .article-item h3 a:hover {
+     text-decoration: underline;
+ }
+
+.article-item p {
+    color: #555; /* Slightly muted text color for description */
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+}
+
+.read-more {
+    display: inline-block; /* Make it behave like a button */
+    font-weight: bold;
+    color: #007bff; /* Standard link blue */
+    text-decoration: none;
+    margin-top: 5px;
+    font-size: 0.9rem;
+}
+
+ .read-more:hover {
+     text-decoration: underline;
+ }
+
+/* --- End of new styles --- */
