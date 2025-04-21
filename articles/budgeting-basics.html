@@ -10,12 +10,14 @@
     <header>
         <div class="container">
              <h1><a href="../index.html">Financial Calculators Hub</a></h1>
-            <nav>
+             <nav>
                 <ul>
                     <li><a href="../index.html">Home</a></li>
                     <li><a href="../calculators/compound-interest.html">Compound Interest</a></li>
-                     <li><a href="../calculators/emi-calculator.html">EMI Calculators</a></li>
-                    <li><a href="index.html">Articles</a></li> <!-- Link to article list -->
+                     <li><a href="../calculators/emi-calculator.html">EMI Calculator</a></li>
+                     <li><a href="../calculators/sip-calculator.html">SIP Calculator</a></li>
+                     <li><a href="../calculators/mortgage-calculator.html">Mortgage Calculator</a></li>
+                    <li><a href="../articles.html">Articles</a></li> <!-- Link to article list -->
                 </ul>
             </nav>
         </div>
@@ -87,10 +89,17 @@
 
     <footer>
         <div class="container">
-            <p>© <span id="current-year"></span> Financial Calculators Hub.</p>
+            <p class="footer-links">
+                <a href="../about.html">About Us</a> |
+                <a href="../privacy.html">Privacy Policy</a> |
+                <a href="../disclaimer.html">Disclaimer</a>
+            </p>
+            <p>© <span id="current-year"></span> Financial Calculators Hub. All rights reserved.</p>
         </div>
     </footer>
-     <script>
+
+    <script>
+        // Simple script for footer year
         document.getElementById('current-year').textContent = new Date().getFullYear();
     </script>
 </body>

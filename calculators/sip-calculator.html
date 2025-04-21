@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIP Calculator (Systematic Investment Plan)</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+         <div class="container">
+            <h1><a href="../index.html">Financial Calculators Hub</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="compound-interest.html">Compound Interest</a></li>
+                    <li><a href="emi-calculator.html">EMI Calculator</a></li>
+                    <li><a href="sip-calculator.html">SIP Calculator</a></li>
+                    <li><a href="mortgage-calculator.html">Mortgage Calculator</a></li>
+                    <li><a href="../articles.html">Articles</a></li>
+                    <!-- Add other links -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="calculator-container">
+            <h2>SIP Calculator</h2>
+            <p>Calculate the future value of your Systematic Investment Plan (SIP) or the monthly investment needed to reach your goal.</p>
+
+            <div class="calculator-type-selector">
+                <label>Calculate:</label>
+                <input type="radio" id="calc-maturity" name="sip-type" value="maturity" checked>
+                <label for="calc-maturity">Maturity Amount (Future Value)</label>
+
+                <input type="radio" id="calc-sip-amount" name="sip-type" value="sip-amount">
+                <label for="calc-sip-amount">Monthly SIP Amount Needed</label>
+
+                <!-- Rate calculation is complex (requires iteration), omitted for now -->
+                <!-- <input type="radio" id="calc-rate" name="sip-type" value="rate">
+                <label for="calc-rate">Rate of Return (Approx.)</label> -->
+            </div>
+
+            <form id="sip-calculator-form" class="calculator-form">
+                <!-- Inputs will be shown/hidden based on selection -->
+                <div class="form-group" id="group-monthly-investment">
+                    <label for="monthly-investment">Monthly Investment Amount (SIP):</label>
+                    <input type="number" id="monthly-investment" min="0" step="any">
+                </div>
+
+                <div class="form-group" id="group-rate">
+                    <label for="rate">Expected Annual Rate of Return (%):</label>
+                     <div class="input-group">
+                        <input type="number" id="rate" min="0" step="any">
+                        <span class="input-group-append">%</span>
+                    </div>
+                </div>
+
+                <div class="form-group" id="group-tenure">
+                    <label for="tenure">Investment Tenure (Years):</label>
+                    <input type="number" id="tenure" min="0" step="any">
+                </div>
+
+                 <div class="form-group" id="group-target-amount">
+                    <label for="target-amount">Target Maturity Amount:</label>
+                    <input type="number" id="target-amount" min="0" step="any">
+                </div>
+
+                <button type="submit" class="button">Calculate</button>
+
+                <div id="error-message" class="error-message" style="display: none;"></div>
+            </form>
+
+            <div id="results" class="results-area" style="display: none;">
+                <!-- Results will be displayed here -->
+            </div>
+            <p style="margin-top: 15px;"><small><strong>Note:</strong> Calculating the exact rate of return given the SIP amount, tenure, and maturity value requires iterative methods and is not included in this basic calculator.</small></p>
+        </section>
+         <section>
+            <h3>Understanding SIP</h3>
+            <p>A Systematic Investment Plan (SIP) is a method of investing a fixed amount of money in mutual funds or other investment instruments at regular intervals (usually monthly). It helps in disciplined investing and rupee cost averaging.</p>
+             <!-- Link to a relevant article when created -->
+             <p>Learn more in our article about <a href="../articles/understanding-compound-interest.html">compound interest</a> which powers SIP growth.</p>
+        </section>
+    </main>
+
+     <footer>
+        <div class="container">
+             <p class="footer-links">
+                <a href="/about.html">About Us</a> |
+                <a href="/privacy.html">Privacy Policy</a> |
+                <a href="/disclaimer.html">Disclaimer</a>
+            </p>
+            <p>© <span id="current-year"></span> Financial Calculators Hub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+    <script src="../js/sip-calculator.js"></script>
+</body>
+</html>

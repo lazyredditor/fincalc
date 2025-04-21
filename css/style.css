@@ -355,5 +355,21 @@ footer {
  .read-more:hover {
      text-decoration: underline;
  }
-
+ * --- Footer Link Styling --- */
+ .footer-links {
+     margin-bottom: 10px; /* Space between links and copyright */
+     font-size: 0.9rem;
+ }
+ 
+ .footer-links a {
+     color: #adb5bd; /* Lighter grey color for footer links */
+     text-decoration: none;
+     margin: 0 5px; /* Small spacing around the pipe */
+ }
+ 
+ .footer-links a:hover {
+     color: #f8f9fa; /* Slightly brighter on hover */
+     text-decoration: underline;
+ }
+ 
 /* --- End of new styles --- */
