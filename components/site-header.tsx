@@ -6,12 +6,17 @@ export function SiteHeader() {
     <header className="sticky top-0 z-40 bg-paper/85 backdrop-blur border-b hairline">
       <div className="max-w-[1400px] mx-auto px-5 lg:px-8">
         <div className="flex items-center justify-between h-14">
-          <Link href="/" className="flex items-baseline gap-2 group">
-            <span className="font-display text-2xl tracking-tightest leading-none">fincalc</span>
-            <span className="text-[10px] uppercase tracking-[0.22em] text-mauve-600">
+          <div className="flex items-baseline gap-2">
+            <Link href="/" className="font-display text-2xl tracking-tightest leading-none">fincalc</Link>
+            <a
+              href="https://betterapp.org"
+              target="_blank"
+              rel="noopener"
+              className="text-[10px] uppercase tracking-[0.22em] text-mauve-600 hover:text-onyx transition"
+            >
               by betterapp
-            </span>
-          </Link>
+            </a>
+          </div>
           <nav className="hidden md:flex items-center gap-1 text-xs">
             {CATEGORIES.map((cat) => (
               <div key={cat.id} className="group relative">

@@ -11,7 +11,17 @@ export default function Home() {
         <div className="max-w-[1400px] mx-auto px-5 lg:px-8 pt-16 pb-12 md:pt-24 md:pb-20">
           <div className="grid lg:grid-cols-12 gap-10 items-end">
             <div className="lg:col-span-8">
-              <div className="label mb-6">Open-source · betterapp.org</div>
+              <div className="label mb-6">
+                Open-source ·{' '}
+                <a
+                  href="https://betterapp.org"
+                  target="_blank"
+                  rel="noopener"
+                  className="hover:text-onyx underline underline-offset-4 decoration-mauve-300 hover:decoration-onyx transition"
+                >
+                  betterapp.org
+                </a>
+              </div>
               <h1 className="font-display tracking-tightest leading-[0.92] text-[clamp(3rem,8vw,7rem)]">
                 Money,<br />
                 <span className="italic text-mauve-500">measured.</span>
